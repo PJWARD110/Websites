@@ -1,0 +1,207 @@
+/* reset styles */
+html {
+   font-size: 16px;
+}
+a, article, body, div, footer, header, h1, h2, h3, img, li, nav, p, table, tbody, td, tfoot, th, thead, tr, ul, video {
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+img, video {
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+
+/* body */
+body {
+   margin: 0 auto;
+   font-family: Arial, Helvetica, sans-serif;
+}
+p {
+   font-size: 1.3em;
+   line-height: 1.6em;
+}
+a:link {
+   color: black;
+}
+a:visited {
+   color: #888;
+}
+
+/* skip navigation link */
+p.skipnavigation a {
+   position: absolute;
+   left: -10000px;
+}
+p.skipnavigation a:focus {
+   color: ivory;
+   background-color: #34180f;
+   top: 0.4em;
+   left: auto;
+   right: 0.4em;
+   z-index: 2;
+}
+
+/* header section */
+h1 {
+   text-align: center;
+   font-family: Bitter, "Times New Roman", Times, serif;
+   font-weight: 700;
+   color: ivory;
+   background: yellow;
+   background: linear-gradient(45deg, yellow, green);
+   
+   font-size: 2.4em;
+}
+
+/* site navigation bar */
+nav.sitenavigation {
+   color: #34180f;
+   text-align: center;
+  background-color: green;
+}
+nav.sitenavigation li {
+   margin: 0.3em 0.5em;
+   display: inline-block;
+   font-size: 1.3em;
+   line-height: 1.4em;
+   -webkit-transition-duration: 0.5s;
+   transition-duration: 0.5s;
+   -webkit-transition-timing-function: ease-in-out;
+   transition-timing-function: ease-in-out;   
+}
+nav.sitenavigation li:hover {
+	-ms-transform:rotate(20deg);
+	-webkit-transform: rotate(20deg);
+	transform: rotate(20deg);
+}
+nav.sitenavigation a:link {
+   text-decoration: none;
+   color: #34180f;
+}
+nav.sitenavigation a:visited {
+   color: #744f42;
+}
+nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+   color: ivory;
+}
+
+/* main content */
+article {
+   margin: 0 auto;
+   padding: 1.4em;
+   background: #7eccec;
+   background: url("images/grass.jpg")
+}
+article div {
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 0 3% 1em;
+   background-color: ivory;
+}
+h2 {
+   padding: 0.4em 0.4em 0;
+   text-align: center;
+   font-family: Bitter, "Times New Roman", Times, serif;
+   font-size: 2em;
+   font-weight: 700;
+}
+h3 {
+   margin-top: 1.4em;
+   font-size: 1.6em;
+   font-family: Bitter, "Times New Roman", Times, serif;
+   font-weight: 700;
+   clear: both;
+}
+article p {
+   padding-top: 1em;
+}
+article p.pullquote {
+   font-size: 1.7em;
+}
+video {
+	width: 300px;
+	height: 300px;
+	-ms-transform:rotate(90deg);
+	-webkit-transform: rotate(90deg);	
+	transform: rotate(90deg);
+}
+/* main content tables*/
+table {
+	width: 90%;
+	margin: 0 auto;
+}
+td, th {
+	border: 1px solid black;
+	font-size: 1.3em;
+}
+th {
+	background-color:#008000;
+}
+fieldset {
+	margin-bottom:.8em;
+}
+label fieldset{
+	font-size: 1em;
+	line-height: 1.6em;
+}
+.contactinfo label {
+	display:block;
+	position:relative;
+	margin:0.8em 0;
+}
+#fnameinput, #lnameinput, #emailinput {
+	width:75%;
+}
+#phoneinput{
+	width:12em;
+}
+#submit {
+	border:1px solid #999;
+	font-size:1.5em;
+	font-weight: bold;
+	background-color:#C8F098;
+	border-radius: 0.5em;
+}
+.submitbutton{
+	display:none;
+}
+.show {
+	display: block;
+}
+
+/* footer section */
+footer {
+   padding: 0.6em;
+   background-color: #34180f;
+   color: ivory;
+   text-align: center;
+   clear:both;
+}
+.accent {
+   font-weight: bold;
+}
+/* small screen and tablet styles*/
+@media screen and (min-width:460px), print {
+	article, h1 {
+		padding:2%;
+	}
+} 
+
+/* print styles */
+@media print {
+   body, h1, article, footer {
+      color: rgb(0,0,0);
+      background: rgb(255,255,255);
+   }
+   body {
+      max-width: 100%;
+   }
+   nav {
+      display: none;
+   }
+}
+@page {
+   margin: 0.75in;
+}
